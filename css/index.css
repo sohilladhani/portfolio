@@ -1,0 +1,187 @@
+body {
+    background-color: #000;
+    /*background-image: radial-gradient( rgba(0, 150, 0, 0.75), black 120%);*/
+    /*height: 100vh;*/
+    text-shadow: 0 0 3px #C8C8C8;
+    font-size: 28px;
+    font-size: 1.5vw;
+}
+
+
+/*body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: repeating-linear-gradient( 0deg, rgba(black, 0.15), rgba(black, 0.15) 1px, transparent 1px, transparent 2px);
+    pointer-events: none;
+}*/
+
+::selection {
+    background: #0080FF;
+    text-shadow: none;
+}
+
+#console {
+    font-family: monospace, courier;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+#a {
+    /*color: #0f0;*/
+    color: #00ff66;
+}
+
+#c {
+    color: #0bc;
+}
+
+#b {
+    color: #ff0096;
+}
+
+#k {
+    animation: change 1s;
+}
+
+#op {
+    color: #888888
+}
+
+@keyframes change {
+    0% {
+        color: #0f0;
+    }
+    50% {
+        color: #0f0;
+    }
+    99% {
+        color: black;
+    }
+}
+
+ins,
+del {
+    text-decoration: none;
+}
+
+kbd {
+    font-family: inherit;
+}
+
+s {
+    display: none;
+}
+
+
+/*
+ * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
+ */
+
+
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    body {
+        font-size: 28px;
+        font-size: 2vw;
+    }
+}
+
+
+/* Smartphones (landscape) ----------- */
+
+@media only screen and (min-width: 321px) {
+    body {
+        font-size: 28px;
+        font-size: 2vw;
+    }
+}
+
+
+/* Smartphones (portrait) ----------- */
+
+@media only screen and (max-width: 320px) {
+    body {
+        font-size: 28px;
+        font-size: 2vw;
+    }
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    body {
+        font-size: 28px;
+        font-size: 1.5vw;
+    }
+}
+
+
+/* iPads (landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    body {
+        font-size: 28px;
+        font-size: 1.5vw;
+    }
+}
+
+
+/* iPads (portrait) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    body {
+        font-size: 28px;
+        font-size: 2vw;
+    }
+}
+
+
+/* Desktops and laptops ----------- */
+
+@media only screen and (min-width: 1224px) {
+    body {
+        font-size: 14px;
+        font-size: 0.75vw;
+    }
+}
+
+
+/* Large screens ----------- */
+
+@media only screen and (min-width: 1824px) {
+    body {
+        font-size: 14px;
+        font-size: 0.75vw;
+    }
+}
+
+
+/* iPhone 4 ----------- */
+
+
+/*@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+    body {
+        font-size: 28px;
+        font-size: 2vw;
+    }
+}*/
